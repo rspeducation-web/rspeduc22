@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About RSP Education | Our Mission & Story</title>
+    <meta name="description" content="Founded to break down barriers to higher education. 100+ students enrolled, 100% retention rate. Learn about our ethical approach to university access.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+        
+        .content-section h2 {
+            font-size: 38px;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+        
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.9;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .comparison-section {
+            background: var(--bg);
+            padding: 60px;
+            border-radius: 20px;
+            margin: 60px 0;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .dont-do, .do-do {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+        }
+        
+        .dont-do h3 {
+            color: #dc2626;
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+        
+        .do-do h3 {
+            color: var(--success);
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+        
+        .comparison-list {
+            list-style: none;
+        }
+        
+        .comparison-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 17px;
+        }
+        
+        .comparison-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .dont-do li::before {
+            content: '❌ ';
+            margin-right: 12px;
+        }
+        
+        .do-do li::before {
+            content: '✅ ';
+            margin-right: 12px;
+        }
+        
+        .stats-highlight {
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            text-align: center;
+            margin: 60px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .stat-big {
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'DM Serif Display', serif;
+        }
+        
+        .stat-label-big {
+            font-size: 16px;
+            color: var(--text-light);
+            margin-top: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-highlight {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Urgent Banner -->
+    <div class="urgent-banner">
+        <span>🎓</span> NOW ENROLLING: February 2026 Intake - Apply Before January 31st - Limited Spaces!
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">RSP Education</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="student-finance.html">Student Finance</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn-header">Apply Now</a>
+        </nav>
+    </header>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>About RSP Education</h1>
+        <p>Breaking down barriers to higher education. Our mission is simple: help talented individuals access university, regardless of their background or qualifications.</p>
+    </div>
+    
+    <!-- Content -->
+    <div class="container">
+        <!-- Our Story -->
+        <div class="content-section">
+            <h2>Our Story</h2>
+            <p>
+                RSP Education was founded with one clear mission: to break down the barriers that prevent talented individuals from accessing higher education. Too many people believe that university is out of reach because they don't have traditional qualifications like A-Levels or GCSEs.
+            </p>
+            <p>
+                We started this journey after witnessing firsthand how the education system fails non-traditional students. Recruitment agencies often prioritize commission over student success, leading to poor course matches and high dropout rates. We knew there had to be a better way.
+            </p>
+            <p>
+                Today, we've helped 100+ students successfully enroll in university programmes across England, and we're proud to maintain a 100% retention rate. Every single student we've placed has completed their degree. This isn't luck - it's the result of careful matching, honest guidance, and genuine support.
+            </p>
+        </div>
+        
+        <!-- Stats -->
+        <div class="stats-highlight">
+            <div>
+                <div class="stat-big">100+</div>
+                <div class="stat-label-big">Students Successfully Enrolled</div>
+            </div>
+            <div>
+                <div class="stat-big">100%</div>
+                <div class="stat-label-big">Student Retention Rate</div>
+            </div>
+            <div>
+                <div class="stat-big">15+</div>
+                <div class="stat-label-big">Partner Universities</div>
+            </div>
+        </div>
+        
+        <!-- Our Mission -->
+        <div class="content-section">
+            <h2>Our Mission</h2>
+            <p>
+                We believe that everyone deserves the opportunity to pursue their academic goals, regardless of their background or previous qualifications. Traditional education pathways aren't for everyone, and that's okay.
+            </p>
+            <p>
+                Our mission is to provide genuinely free, ethical support throughout your entire university journey. From your first inquiry to enrollment day and beyond, we're with you every step of the way. We've built strong relationships with universities across the UK, allowing us to offer insider knowledge and expert guidance that makes the application process straightforward and stress-free.
+            </p>
+            <p>
+                What sets us apart is our commitment to doing what's right for the student, not what's most profitable for us. We only recommend courses we genuinely believe are suitable, and we provide ongoing support to ensure your success.
+            </p>
+        </div>
+        
+        <!-- Why We're Different -->
+        <div class="comparison-section">
+            <h2 style="text-align: center; font-size: 42px; color: var(--primary); margin-bottom: 20px;">Why RSP Education is Different</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; font-size: 18px; color: var(--text-light);">
+                Not all education consultancies are the same. Here's what makes us different from typical recruitment agencies.
+            </p>
+            <div class="comparison-grid">
+                <div class="dont-do">
+                    <h3>❌ What We DON'T Do</h3>
+                    <ul class="comparison-list">
+                        <li>Charge hidden fees or upfront costs</li>
+                        <li>Work through third-party agencies</li>
+                        <li>Abandon students after enrollment</li>
+                        <li>Push unsuitable courses for commission</li>
+                        <li>Promise unrealistic outcomes</li>
+                        <li>Use aggressive sales tactics</li>
+                    </ul>
+                </div>
+                
+                <div class="do-do">
+                    <h3>✅ What We DO</h3>
+                    <ul class="comparison-list">
+                        <li>100% free service (universities pay us)</li>
+                        <li>Direct university partnerships only</li>
+                        <li>Support from inquiry to graduation</li>
+                        <li>Honest course matching based on goals</li>
+                        <li>Proven 100% retention rate</li>
+                        <li>Build long-term relationships</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Our Values -->
+        <div class="content-section">
+            <h2>Our Values</h2>
+            <p>
+                <strong>Transparency:</strong> We're upfront about everything. No hidden fees, no surprises. We explain exactly how the process works and how we get paid (by universities, not by you).
+            </p>
+            <p>
+                <strong>Student-First Approach:</strong> Your success is our success. We only recommend courses we genuinely believe are right for you, even if that means lower commission for us.
+            </p>
+            <p>
+                <strong>Long-Term Support:</strong> We don't disappear after enrollment. We're here throughout your degree to provide guidance, answer questions, and celebrate your milestones.
+            </p>
+            <p>
+                <strong>Accessibility:</strong> Higher education should be accessible to everyone. We specialize in helping non-traditional students navigate a system that wasn't designed for them.
+            </p>
+            <p>
+                <strong>Excellence:</strong> Our 100% retention rate speaks for itself. We take pride in our work and are committed to maintaining the highest standards.
+            </p>
+        </div>
+        
+        <!-- Our Approach -->
+        <div class="content-section">
+            <h2>Our Approach</h2>
+            <p>
+                We take the time to understand your unique situation, goals, and circumstances. Every student is different, and we tailor our approach accordingly. Whether you're a career changer, mature student, or someone who took a non-traditional path, we find the right programme for you.
+            </p>
+            <p>
+                Our expertise in Student Finance England is particularly valuable. Many students don't realize how much funding they're entitled to or how the process works. We guide you through every step, ensuring you maximize your entitlements and understand your obligations.
+            </p>
+            <p>
+                We also provide comprehensive interview and assessment preparation. University entry assessments can be daunting, but with our support, our students consistently perform well and secure their places.
+            </p>
+        </div>
+        
+        <!-- CTA -->
+        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 60px; border-radius: 20px; text-align: center; color: white; margin-top: 80px;">
+            <h2 style="font-size: 42px; margin-bottom: 20px;">Ready to Start Your Journey?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.95;">
+                Join 100+ students who've successfully transformed their lives through higher education. Let's discuss your goals and find the perfect pathway for you.
+            </p>
+            <a href="contact.html" class="btn-primary">Get Started Today</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>RSP Education</h3>
+                <p style="line-height: 1.8; opacity: 0.8;">
+                    Breaking down barriers to higher education. We believe everyone deserves the opportunity 
+                    to pursue their academic goals, regardless of background or previous qualifications.
+                </p>
+                <p style="margin-top: 20px; font-weight: 600;">
+                    💰 <a href="referral-partners.html" style="color: var(--accent); text-decoration: none;">Interested in referring students? Earn £200-500 per enrollment →</a>
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="student-finance.html">Student Finance</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="referral-partners.html">Become a Partner</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="/cdn-cgi/l/email-protection#87eee9e1e8c7f5f4f7e2e3f2e4e6f3eee8e9a9e4e8a9f2ec"><span class="__cf_email__" data-cfemail="bed7d0d8d1fecccdcedbdacbdddfcad7d1d090ddd190cbd5">[email&#160;protected]</span></a></li>
+                    <li><a href="tel:+447404947887">07404 947887</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        
+ 

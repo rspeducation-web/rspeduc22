@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Courses Without A-Levels | RSP Education</title>
+    <meta name="description" content="Browse 100+ fully-funded university courses. No A-Levels required. Business, Computing, Healthcare, Engineering and more. Free application support.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .course-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+        
+        .course-icon {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+        
+        .course-card h3 {
+            font-size: 26px;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+        
+        .course-list {
+            color: var(--text-light);
+            line-height: 1.9;
+            margin-bottom: 24px;
+        }
+        
+        .course-card .btn-secondary {
+            font-size: 16px;
+            padding: 14px 30px;
+        }
+        
+        .course-features {
+            background: var(--bg);
+            padding: 60px 5%;
+            margin: 80px 0;
+        }
+        
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .feature-item h3 {
+            font-size: 20px;
+            margin: 16px 0 12px;
+            color: var(--primary);
+        }
+        
+        .feature-icon {
+            font-size: 42px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Urgent Banner -->
+    <div class="urgent-banner">
+        <span>🎓</span> NOW ENROLLING: February 2026 Intake - Apply Before January 31st - Limited Spaces!
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">RSP Education</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="student-finance.html">Student Finance</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn-header">Apply Now</a>
+        </nav>
+    </header>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Explore Our Courses</h1>
+        <p>Browse 100+ fully-funded university courses across 12 subject areas. No A-Levels required for many programmes. Find your perfect pathway to a degree.</p>
+    </div>
+    
+    <!-- Course Features -->
+    <div class="course-features">
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">✅</div>
+                <h3>No Qualifications Required</h3>
+                <p>Many courses accept work experience instead of A-Levels</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <h3>Fully Funded</h3>
+                <p>Student Finance covers tuition & living costs</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📅</div>
+                <h3>Multiple Intakes</h3>
+                <p>Start in Feb, May, Sep, or Nov</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🏛️</div>
+                <h3>15+ Universities</h3>
+                <p>Partner institutions across England</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Courses Grid -->
+    <div class="container">
+        <div class="courses-grid">
+            <!-- Business & Management -->
+            <div class="course-card">
+                <div class="course-icon">💼</div>
+                <h3>Business & Management</h3>
+                <div class="course-list">
+                    • Business Management<br>
+                    • Business Administration<br>
+                    • Entrepreneurship<br>
+                    • International Business<br>
+                    • Marketing Management<br>
+                    • Human Resource Management
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Accounting & Finance -->
+            <div class="course-card">
+                <div class="course-icon">💰</div>
+                <h3>Accounting & Finance</h3>
+                <div class="course-list">
+                    • Accounting<br>
+                    • Finance<br>
+                    • Financial Management<br>
+                    • Banking & Finance<br>
+                    • Accounting & Business<br>
+                    • Investment Management
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Computing & IT -->
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Computing & IT</h3>
+                <div class="course-list">
+                    • Computer Science<br>
+                    • Information Technology<br>
+                    • Software Engineering<br>
+                    • Cyber Security<br>
+                    • Data Science<br>
+                    • Web Development
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Health & Social Care -->
+            <div class="course-card">
+                <div class="course-icon">🏥</div>
+                <h3>Health & Social Care</h3>
+                <div class="course-list">
+                    • Health & Social Care<br>
+                    • Healthcare Management<br>
+                    • Public Health<br>
+                    • Social Work<br>
+                    • Nursing Studies<br>
+                    • Mental Health Studies
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Construction & Engineering -->
+            <div class="course-card">
+                <div class="course-icon">🏗️</div>
+                <h3>Construction & Engineering</h3>
+                <div class="course-list">
+                    • Construction Management<br>
+                    • Civil Engineering<br>
+                    • Building Services Engineering<br>
+                    • Quantity Surveying<br>
+                    • Structural Engineering<br>
+                    • Project Management
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Project Management -->
+            <div class="course-card">
+                <div class="course-icon">📊</div>
+                <h3>Project Management</h3>
+                <div class="course-list">
+                    • Project Management<br>
+                    • Programme Management<br>
+                    • Operations Management<br>
+                    • Strategic Management<br>
+                    • Supply Chain Management<br>
+                    • Quality Management
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Law & Criminology -->
+            <div class="course-card">
+                <div class="course-icon">⚖️</div>
+                <h3>Law & Criminology</h3>
+                <div class="course-list">
+                    • Law<br>
+                    • Business Law<br>
+                    • Criminology<br>
+                    • Criminal Justice<br>
+                    • Legal Studies<br>
+                    • Policing Studies
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Education & Teaching -->
+            <div class="course-card">
+                <div class="course-icon">🎓</div>
+                <h3>Education & Teaching</h3>
+                <div class="course-list">
+                    • Education Studies<br>
+                    • Early Years Education<br>
+                    • Special Educational Needs<br>
+                    • Teacher Training<br>
+                    • Educational Leadership<br>
+                    • Childhood Studies
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Psychology -->
+            <div class="course-card">
+                <div class="course-icon">🧠</div>
+                <h3>Psychology</h3>
+                <div class="course-list">
+                    • Psychology<br>
+                    • Applied Psychology<br>
+                    • Child Psychology<br>
+                    • Counselling Psychology<br>
+                    • Forensic Psychology<br>
+                    • Sports Psychology
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Creative Arts & Media -->
+            <div class="course-card">
+                <div class="course-icon">🎨</div>
+                <h3>Creative Arts & Media</h3>
+                <div class="course-list">
+                    • Media Studies<br>
+                    • Digital Marketing<br>
+                    • Graphic Design<br>
+                    • Creative Writing<br>
+                    • Film Production<br>
+                    • Photography
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Hospitality & Tourism -->
+            <div class="course-card">
+                <div class="course-icon">🍽️</div>
+                <h3>Hospitality & Tourism</h3>
+                <div class="course-list">
+                    • Hospitality Management<br>
+                    • Tourism Management<br>
+                    • Events Management<br>
+                    • Hotel Management<br>
+                    • Culinary Arts<br>
+                    • Travel & Tourism
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+            
+            <!-- Social Sciences -->
+            <div class="course-card">
+                <div class="course-icon">🌍</div>
+                <h3>Social Sciences</h3>
+                <div class="course-list">
+                    • Sociology<br>
+                    • Politics<br>
+                    • International Relations<br>
+                    • Human Geography<br>
+                    • Economics<br>
+                    • Social Policy
+                </div>
+                <a href="contact.html" class="btn-secondary">Apply Now</a>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 60px; border-radius: 20px; text-align: center; margin-top: 80px;">
+            <h2 style="font-size: 42px; color: var(--primary-dark); margin-bottom: 20px;">Can't Find Your Course?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px;">We work with 15+ universities offering hundreds of courses. Get in touch and we'll find the perfect programme for you.</p>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>RSP Education</h3>
+                <p style="line-height: 1.8; opacity: 0.8;">
+                    Breaking down barriers to higher education. We believe everyone deserves the opportunity 
+                    to pursue their academic goals, regardless of background or previous qualifications.
+                </p>
+                <p style="margin-top: 20px; font-weight: 600;">
+                    💰 <a href="referral-partners.html" style="color: var(--accent); text-decoration: none;">Interested in referring students? Earn £200-500 per enrollment →</a>
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="student-finance.html">Student Finance</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="referral-partners.html">Become a Partner</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="/cdn-cgi/l/email-protection#224b4c444d625051524746574143564b4d4c0c414d0c5749"><span class="__cf_email__" data-cfemail="f29b9c949db28081829796879193869b9d9cdc919ddc8799">[email&#160;protected]</span></a></li>
+                    <li><a href="tel:+447404947887">07404 947887</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        
+ 

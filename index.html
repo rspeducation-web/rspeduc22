@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSP Education | Get Into University Without A-Levels | 100% Free Service</title>
+    <meta name="description" content="No GCSEs or A-Levels? No problem. Free university application support, expert Student Finance guidance & interview prep. 100+ students enrolled. 100% retention rate.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 100px 5% 120px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 68px;
+            margin-bottom: 24px;
+        }
+        
+        .hero-checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin: 40px 0;
+        }
+        
+        .hero-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+        
+        .hero-checklist li::before {
+            content: '✅';
+            font-size: 24px;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        /* Stats Bar */
+        .stats-bar {
+            background: white;
+            padding: 50px 5%;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'DM Serif Display', serif;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 15px;
+        }
+        
+        /* Value Props */
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+        
+        .value-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 80px 5%;
+            text-align: center;
+            border-radius: 20px;
+            margin: 80px 5%;
+        }
+        
+        .cta-section h2 {
+            font-size: 48px;
+            color: var(--primary-dark);
+            margin-bottom: 24px;
+        }
+        
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 42px;
+            }
+            
+            .hero-checklist {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Urgent Banner -->
+    <div class="urgent-banner">
+        <span>🎓</span> NOW ENROLLING: February 2026 Intake - Apply Before January 31st - Limited Spaces!
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">RSP Education</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="student-finance.html">Student Finance</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn-header">Apply Now</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get Into University —<br>Even Without A-Levels</h1>
+            <ul class="hero-checklist">
+                <li>No GCSEs or A-Levels? We'll Find You a Place</li>
+                <li>100% Free Service - We Never Charge Students</li>
+                <li>Expert Student Finance Guidance Included</li>
+                <li>100% of Our Students Complete Their Degrees</li>
+            </ul>
+            <div class="hero-cta">
+                <a href="contact.html" class="btn-primary">Check Your Eligibility</a>
+                <a href="student-finance.html" class="btn-secondary">Calculate Your Funding</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Students Successfully Enrolled</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Student Retention Rate</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">£0</div>
+                <div class="stat-label">Cost to Students (Always Free)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Partner Universities Nationwide</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Value Props -->
+    <div class="container">
+        <h2 class="section-title">Why Choose RSP Education?</h2>
+        <div class="value-props">
+            <div class="value-card">
+                <div class="value-icon">🎓</div>
+                <h3>No Qualifications Required</h3>
+                <p>Many of our university partners accept students based on work experience, maturity, and motivation - not just traditional qualifications.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">💰</div>
+                <h3>Student Finance Specialists</h3>
+                <p>Expert guidance through the entire Student Finance England process. We ensure you understand your funding and maximize what you're entitled to.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">✍️</div>
+                <h3>Interview & Assessment Prep</h3>
+                <p>Comprehensive preparation ensures you're confident and ready. Our students consistently ace their interviews and assessments.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <h3>100% Retention Rate</h3>
+                <p>Every student we've enrolled has completed their degree. We match you carefully to the right programme and support you throughout.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">💯</div>
+                <h3>Always 100% Free</h3>
+                <p>Universities pay us to find talented students. We never charge you - not for applications, guidance, or support. Ever.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">📈</div>
+                <h3>Career-Focused Matching</h3>
+                <p>We align your course choice with your career goals, ensuring your degree delivers real ROI and opens the right doors.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="about.html" class="btn-secondary">Learn More About Us →</a>
+        </div>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <h2>Ready to Start Your University Journey?</h2>
+        <p>Join 100+ students who've successfully enrolled with our help. Free consultation, expert guidance, and ongoing support every step of the way.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn-primary">Apply Now</a>
+            <a href="courses.html" class="btn-secondary">Browse Courses</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>RSP Education</h3>
+                <p style="line-height: 1.8; opacity: 0.8;">
+                    Breaking down barriers to higher education. We believe everyone deserves the opportunity 
+                    to pursue their academic goals, regardless of background or previous qualifications.
+                </p>
+                <p style="margin-top: 20px; font-weight: 600;">
+                    💰 <a href="referral-partners.html" style="color: var(--accent); text-decoration: none;">Interested in referring students? Earn £200-500 per enrollment →</a>
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="student-finance.html">Student Finance</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="referral-partners.html">Become a Partner</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="/cdn-cgi/l/email-protection#157c7b737a556766657071607674617c7a7b3b767a3b607e"><span class="__cf_email__" data-cfemail="0a63646c654a78797a6f6e7f696b7e636564246965247f61">[email&#160;protected]</span></a></li>
+                    <li><a href="tel:+447404947887">07404 947887</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+                <h4 style="margin-top: 30px;">Cities We Serve</h4>
+                <ul>
+                    <li>Birmingham</li>
+                    <li>London</li>
+                    <li>Manchester</li>
+                    <li>Leeds</li>
+                    <li>Leicester</li>
+                    <li>Nationwide</li>
+                </ul>
+            </div>
+        </div>
+        
+ 

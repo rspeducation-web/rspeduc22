@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Finance England Guide 2026 | RSP Education</title>
+    <meta name="description" content="Complete guide to Student Finance England. Calculate your maintenance loan, understand tuition fees, learn about repayment. Expert free guidance included.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .finance-calculator {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 20px;
+            padding: 60px;
+            margin: 60px 0;
+            box-shadow: 0 10px 40px rgba(245, 158, 11, 0.2);
+        }
+        
+        .finance-calculator h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: var(--primary-dark);
+        }
+        
+        .calculator-interface {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        
+        .calculator-interface label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        
+        .calculator-interface select {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        
+        .calc-result {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 24px;
+        }
+        
+        .calc-result-amount {
+            font-size: 56px;
+            font-weight: 700;
+            font-family: 'DM Serif Display', serif;
+            margin-bottom: 12px;
+        }
+        
+        .calc-result-label {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .calc-disclaimer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-light);
+            text-align: center;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+        
+        .info-card h3 {
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .info-card p, .info-card ul {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+        
+        .info-card ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+        
+        .info-card li {
+            margin-bottom: 12px;
+        }
+        
+        .highlight-box {
+            background: var(--bg);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            margin: 24px 0;
+        }
+        
+        .highlight-box strong {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Urgent Banner -->
+    <div class="urgent-banner">
+        <span>🎓</span> NOW ENROLLING: February 2026 Intake - Apply Before January 31st - Limited Spaces!
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">RSP Education</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="student-finance.html" class="active">Student Finance</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <a href="contact.html" class="cta-btn-header">Apply Now</a>
+        </nav>
+    </header>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Student Finance England Guide</h1>
+        <p>Everything you need to know about funding your university education. Use our calculator below to estimate your loan, then get expert free guidance from our team.</p>
+    </div>
+    
+    <!-- Calculator Section -->
+    <div class="container">
+        <div class="finance-calculator">
+            <h2>💰 Calculate Your Student Finance</h2>
+            <p style="font-size: 18px; margin-bottom: 20px;">Use our calculator to estimate how much funding you could receive for tuition fees and living costs.</p>
+            
+            <div class="calculator-interface">
+                <label for="location">Where will you be studying?</label>
+                <select id="location" onchange="updateCalculation()">
+                    <option value="outside">Outside London</option>
+                    <option value="london">In London</option>
+                </select>
+                
+                <label for="income">Household Income</label>
+                <select id="income" onchange="updateCalculation()">
+                    <option value="low">Under £25,000</option>
+                    <option value="medium">£25,000 - £42,875</option>
+                    <option value="high">Over £42,875</option>
+                </select>
+                
+                <div class="calc-result">
+                    <div class="calc-result-amount" id="loanAmount">£10,227</div>
+                    <div class="calc-result-label">Estimated Annual Maintenance Loan</div>
+                </div>
+                
+                <div class="calc-result" style="background: var(--success); margin-top: 20px;">
+                    <div class="calc-result-amount">£9,250</div>
+                    <div class="calc-result-label">Annual Tuition Fee Loan (Fully Covered)</div>
+                </div>
+                
+                <p class="calc-disclaimer">*These are estimates. Actual amounts depend on individual circumstances and are subject to Student Finance England assessment.</p>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="contact.html" class="btn-primary">Get Expert Help With Your Application →</a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function updateCalculation() {
+                const location = document.getElementById('location').value;
+                const income = document.getElementById('income').value;
+                
+                let amount;
+                if (location === 'london') {
+                    if (income === 'low') amount = '£13,348';
+                    else if (income === 'medium') amount = '£11,500';
+                    else amount = '£8,000';
+                } else {
+                    if (income === 'low') amount = '£10,227';
+                    else if (income === 'medium') amount = '£8,800';
+                    else amount = '£6,500';
+                }
+                
+                document.getElementById('loanAmount').textContent = amount;
+            }
+        </script>
+        
+        <!-- Guide Content -->
+        <div style="max-width: 900px; margin: 60px auto 0;">
+            <h2 style="font-size: 42px; color: var(--primary); text-align: center; margin-bottom: 60px;">Complete Student Finance Guide</h2>
+            
+            <!-- What is Student Finance -->
+            <div class="info-card">
+                <h3>What is Student Finance England?</h3>
+                <p>
+                    Student Finance England (SFE) provides financial support to eligible students studying at universities in England. The support comes in two main forms:
+                </p>
+                <ul>
+                    <li><strong>Tuition Fee Loan:</strong> Covers the full cost of your course (up to £9,250 per year) - paid directly to the university</li>
+                    <li><strong>Maintenance Loan:</strong> Helps with living costs like accommodation, food, and bills - paid directly to you</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Important:</strong> These are loans, not grants, but repayment only begins when you're earning over £27,295 per year, and any outstanding balance is written off after 30 years.
+                </div>
+            </div>
+            
+            <!-- Eligibility -->
+            <div class="info-card">
+                <h3>Who is Eligible?</h3>
+                <p>You can apply for Student Finance if:</p>
+                <ul>
+                    <li>You're a UK national or have settled status</li>
+                    <li>You've lived in the UK for 3 years before starting your course</li>
+                    <li>You're studying an eligible course at an eligible institution</li>
+                    <li>You're studying your first higher education qualification (in most cases)</li>
+                </ul>
+                <p>
+                    Age is NOT a barrier - whether you're 18 or 58, you can apply for Student Finance. We've helped students of all ages access funding.
+                </p>
+            </div>
+            
+            <!-- Maintenance Loan Breakdown -->
+            <div class="info-card">
+                <h3>Maintenance Loan Amounts</h3>
+                <p>The amount you receive depends on:</p>
+                <ul>
+                    <li>Where you live while studying (London vs. outside London)</li>
+                    <li>Your household income</li>
+                    <li>Whether you're living with parents</li>
+                </ul>
+                <p><strong>Maximum Annual Amounts for 2024/25:</strong></p>
+                <ul>
+                    <li>Living away from home in London: <strong>£13,348</strong></li>
+                    <li>Living away from home outside London: <strong>£10,227</strong></li>
+                    <li>Living with parents: <strong>£8,610</strong></li>
+                </ul>
+                <div class="highlight-box">
+                    Lower household incomes receive higher maintenance loans. Even if your parents earn over £42,875, you'll still receive a minimum of around £6,500-£8,000 per year.
+                </div>
+            </div>
+            
+            <!-- How to Apply -->
+            <div class="info-card">
+                <h3>How to Apply</h3>
+                <p><strong>Application Timeline:</strong></p>
+                <ul>
+                    <li>Applications open in February/March for courses starting in September</li>
+                    <li>Apply as soon as possible - it can take 6-8 weeks to process</li>
+                    <li>You can still apply after your course has started, but earlier is better</li>
+                </ul>
+                <p><strong>What You'll Need:</strong></p>
+                <ul>
+                    <li>Personal details (name, date of birth, National Insurance number)</li>
+                    <li>Course details (university, course name, start date)</li>
+                    <li>Household income information (for means-tested funding)</li>
+                    <li>Bank account details</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>RSP Support:</strong> We guide you through every step of the application process. Our expertise ensures you complete forms correctly, maximize your entitlements, and avoid common mistakes.
+                </div>
+            </div>
+            
+            <!-- Repayment -->
+            <div class="info-card">
+                <h3>Loan Repayment</h3>
+                <p>Repayment is income-contingent, meaning you only pay when you can afford it:</p>
+                <ul>
+                    <li>You start repaying the April after you leave university</li>
+                    <li>Only if you earn over <strong>£27,295 per year</strong></li>
+                    <li>You repay <strong>9% of income above the threshold</strong></li>
+                    <li>Deductions are taken automatically from your salary (like tax)</li>
+                </ul>
+                <p><strong>Example:</strong> If you earn £32,295 per year:</p>
+                <ul>
+                    <li>Income above threshold: £5,000</li>
+                    <li>Monthly repayment: 9% of £5,000 = £450 per year (£37.50/month)</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Key Point:</strong> Any outstanding balance is written off after 30 years. If you never earn above the threshold, you never repay anything.
+                </div>
+            </div>
+            
+            <!-- Common Myths -->
+            <div class="info-card">
+                <h3>Common Myths Debunked</h3>
+                <p><strong>Myth: "I'm too old for Student Finance"</strong></p>
+                <p>FALSE. There's no upper age limit. We've helped students in their 40s, 50s, and 60s access full funding.</p>
+                
+                <p style="margin-top: 24px;"><strong>Myth: "I need to pay it back like a bank loan"</strong></p>
+                <p>FALSE. It's income-contingent. If you don't earn enough, you don't pay. After 30 years, it's written off.</p>
+                
+                <p style="margin-top: 24px;"><strong>Myth: "It will affect my credit score"</strong></p>
+                <p>FALSE. Student loans don't appear on your credit file and won't affect your ability to get a mortgage.</p>
+                
+                <p style="margin-top: 24px;"><strong>Myth: "My parents have to pay if I can't"</strong></p>
+                <p>FALSE. The loan is in your name only. Your parents have no legal obligation to repay.</p>
+            </div>
+            
+            <!-- Why Choose RSP -->
+            <div class="info-card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white;">
+                <h3 style="color: white;">Why Get Student Finance Help From RSP?</h3>
+                <p style="color: rgba(255,255,255,0.95);">
+                    Student Finance applications can be confusing, especially if you're a mature student, career changer, or have unique circumstances. Our team specializes in:
+                </p>
+                <ul style="color: rgba(255,255,255,0.95);">
+                    <li>Maximizing your loan entitlements</li>
+                    <li>Navigating complex household income assessments</li>
+                    <li>Helping with evidence requirements</li>
+                    <li>Ensuring forms are completed correctly</li>
+                    <li>Appealing decisions if needed</li>
+                    <li>Ongoing support throughout your studies</li>
+                </ul>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="contact.html" class="btn-primary">Get Free Expert Guidance →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>RSP Education</h3>
+                <p style="line-height: 1.8; opacity: 0.8;">
+                    Breaking down barriers to higher education. We believe everyone deserves the opportunity 
+                    to pursue their academic goals, regardless of background or previous qualifications.
+                </p>
+                <p style="margin-top: 20px; font-weight: 600;">
+                    💰 <a href="referral-partners.html" style="color: var(--accent); text-decoration: none;">Interested in referring students? Earn £200-500 per enrollment →</a>
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="student-finance.html">Student Finance</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="referral-partners.html">Become a Partner</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="/cdn-cgi/l/email-protection#e28b8c848da29091928786978183968b8d8ccc818dcc9789"><span class="__cf_email__" data-cfemail="422b2c242d023031322726372123362b2d2c6c212d6c3729">[email&#160;protected]</span></a></li>
+                    <li><a href="tel:+447404947887">07404 947887</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        
+ 
